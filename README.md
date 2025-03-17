@@ -1,35 +1,100 @@
 # IEEE TEMS Website
 
-A modern web application for the IEEE Technology & Engineering Management Society (TEMS) chapter at SRM Institute of Science and Technology.
+<div align="center">
+  
+  [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+  [![Issues](https://img.shields.io/github/issues/ShinobiWonKnobi/IEEE_TEMS)](https://github.com/ShinobiWonKnobi/IEEE_TEMS/issues)
+  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ShinobiWonKnobi/IEEE_TEMS/pulls)
+  
+</div>
 
-## Features
+A modern, responsive web application built for the IEEE Technology & Engineering Management Society (TEMS) chapter at SRM Institute of Science and Technology. This project serves as the official web presence for the TEMS chapter, showcasing events, team members, and chapter activities.
 
-- Responsive design that works on all devices
-- Modern UI with smooth animations
-- Event management and display
-- Team member showcase
-- Contact form with validation
-- Image upload and management
-- Robust error handling
+## 📸 Screenshots
 
-## Tech Stack
+<div align="center">
+  <i>Coming soon</i>
+</div>
+
+## ✨ Features
+
+- **Responsive Design** - Optimized for desktop, tablet, and mobile devices
+- **Modern UI** - Clean interface with smooth animations powered by Framer Motion
+- **Event Management** - Display and filter upcoming and past events
+- **Team Showcase** - Highlight chapter officers and members
+- **Contact Form** - Get in touch with form validation
+- **Dynamic Content** - Fetch and update content through the backend API
+
+## 🛠️ Tech Stack
 
 ### Frontend
-- React 19 with Vite
-- React Router for navigation
-- TanStack Query for data fetching
-- Framer Motion for animations
-- Tailwind CSS for styling
-- Axios for API requests
+- **React 19** - Built with the latest React version
+- **Vite** - Lightning-fast build tooling
+- **React Router** - Client-side routing
+- **TanStack Query** - Data fetching and state management
+- **Framer Motion** - Animations and transitions
+- **Tailwind CSS** - Utility-first styling approach
+- **Axios** - HTTP client
 
 ### Backend
-- Node.js with Express
-- MongoDB for database
-- Mongoose for object modeling
-- Multer for file uploads
-- CORS for cross-origin requests
+- **Node.js** - JavaScript runtime
+- **Express** - Web framework
+- **MongoDB** - NoSQL database
+- **Mongoose** - MongoDB object modeling
+- **Multer** - File upload handling
+- **CORS** - Cross-origin resource sharing
 
-## Project Structure
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js v16+ 
+- npm or yarn
+- MongoDB (local or Atlas)
+
+### Local Development Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/ShinobiWonKnobi/IEEE_TEMS.git
+   cd IEEE_TEMS
+   ```
+
+2. **Set up environment variables**
+   Create a `.env` file in the root directory:
+   ```
+   MONGO_URI=your_mongodb_connection_string
+   PORT=5000
+   NODE_ENV=development
+   FRONTEND_URL=http://localhost:5173
+   ```
+
+3. **Install dependencies**
+   ```bash
+   # Install backend dependencies
+   npm install
+   
+   # Install frontend dependencies
+   cd frontend && npm install
+   ```
+
+4. **Start development servers**
+   ```bash
+   # Start both backend and frontend concurrently
+   npm run dev:all
+   
+   # Or start them separately:
+   # Terminal 1 - Backend
+   npm run dev
+   
+   # Terminal 2 - Frontend
+   cd frontend && npm run dev
+   ```
+
+5. **Open your browser**
+   Navigate to [http://localhost:5173](http://localhost:5173)
+
+## 📁 Project Structure
 
 ```
 ├── backend/                # Backend server code
@@ -50,90 +115,36 @@ A modern web application for the IEEE Technology & Engineering Management Societ
         └── utils/          # Utility functions
 ```
 
-## Getting Started
+## 🔄 Workflow
 
-### Prerequisites
+The project follows a feature-branch workflow:
 
-- Node.js (v16 or higher)
-- MongoDB (local or Atlas)
+1. Create a branch for your feature: `git checkout -b feature/your-feature`
+2. Make your changes and commit: `git commit -m "Add feature XYZ"`
+3. Push your branch: `git push origin feature/your-feature`
+4. Open a Pull Request on GitHub
 
-### Installation
+## 🧪 UI Guidelines
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/ieee-tems.git
-   cd ieee-tems
-   ```
+The project has established UI guidelines to maintain consistency. Please refer to `frontend/UI-GUIDELINES.md` for details on:
 
-2. Install backend dependencies:
-   ```bash
-   npm install
-   ```
+- Color palette
+- Typography
+- Component styling
+- Best practices
 
-3. Install frontend dependencies:
-   ```bash
-   cd frontend
-   npm install
-   ```
+## 📄 License
 
-4. Create a `.env` file in the root directory with the following variables:
-   ```
-   MONGO_URI=your_mongodb_connection_string
-   PORT=5000
-   NODE_ENV=development
-   FRONTEND_URL=http://localhost:5173
-   ```
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### Running the Application
+## 👥 Contributors
 
-1. Start the backend server:
-   ```bash
-   npm run dev
-   ```
+<a href="https://github.com/ShinobiWonKnobi/IEEE_TEMS/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ShinobiWonKnobi/IEEE_TEMS" />
+</a>
 
-2. In a separate terminal, start the frontend development server:
-   ```bash
-   cd frontend
-   npm run dev
-   ```
+## 🙏 Acknowledgements
 
-3. Open your browser and navigate to `http://localhost:5173`
-
-## Deployment
-
-### Backend
-
-1. Build the backend:
-   ```bash
-   npm run build
-   ```
-
-2. Deploy to your preferred hosting service (Heroku, Vercel, etc.)
-
-### Frontend
-
-1. Build the frontend:
-   ```bash
-   cd frontend
-   npm run build
-   ```
-
-2. Deploy the contents of the `dist` directory to your preferred hosting service
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/your-feature-name`
-3. Commit your changes: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin feature/your-feature-name`
-5. Open a pull request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgements
-
-- IEEE TEMS for their support
+- IEEE TEMS for their support and guidance
 - SRM Institute of Science and Technology
-- All contributors to this project 
+- All contributing developers 
